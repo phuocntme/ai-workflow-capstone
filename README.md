@@ -34,20 +34,20 @@ The following table explicitly addresses each question evaluated during peer rev
 
 ```mermaid
 flowchart TD
-    subgraph Data Layer
+    subgraph Data_Layer ["Data Layer"]
         A1["Raw Invoices (cs-train)"] --> B["data_ingestion.py"]
         A2["New Batches (cs-production)"] --> B
         B --> C["Daily Feature Engineering (Lags, Rolling Means/Std, Seasonality)"]
     end
 
-    subgraph Modeling & Evaluation
+    subgraph Modeling_Evaluation ["Modeling & Evaluation"]
         C --> D["Baseline Model (Historical Mean)"]
         C --> E["Candidate Models (Random Forest, Gradient Boosting, Ridge)"]
         D & E --> F["model_comparison.ipynb & Validation Plots"]
         E --> G["Serialized Production Models (models/model-*.joblib)"]
     end
 
-    subgraph Microservice API (Flask)
+    subgraph Microservice_API ["Microservice API (Flask)"]
         H["Client Request"] --> I["POST /predict"]
         H --> J["POST /train"]
         H --> K["GET /monitoring"]
@@ -59,7 +59,7 @@ flowchart TD
         K --> O["monitoring.py (KS Drift & Wasserstein Distance)"]
     end
 
-    subgraph Test Suite Isolation
+    subgraph Test_Suite_Isolation ["Test Suite Isolation"]
         P["python run-tests.py"] --> Q["unittests (ApiTests, ModelTests, LoggerTests)"]
         Q -->|test=True| R["Isolated Test Logs (logs/*-test.log)"]
         Q -->|test=True| S["Isolated Test Models (models/test-model-*.joblib)"]
