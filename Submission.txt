@@ -2,5 +2,5 @@ Project Title
 => AI Enterprise Revenue Forecasting & Production Monitoring Microservice
 
 Please provide the URL to your github repository for your capstone solution. (Make sure it is accessible to other students to review)
-=> https://github.com/<your-github-username>/ai-workflow-capstone
+=> https://github.com/phuocntme/ai-workflow-capstone
 
