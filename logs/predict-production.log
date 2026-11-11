@@ -1,0 +1,4 @@
+{"timestamp": "2026-10-30T04:25:45.059693", "y_pred": 20962.64, "y_proba": [14366.3, 27558.98], "query": {"country": "all", "target_date": "2019-05-15"}, "runtime_seconds": 0.1407, "model_version": "0.1"}
+{"timestamp": "2026-10-30T04:25:45.196905", "y_pred": 13790.63, "y_proba": [9886.55, 17694.72], "query": {"country": "united_kingdom", "target_date": "2019-05-15"}, "runtime_seconds": 0.1338, "model_version": "0.1"}
+{"timestamp": "2026-11-11T07:01:54.001398+00:00", "y_pred": 20942.22, "y_proba": [14348.19, 27536.25], "query": {"country": "all", "target_date": "2019-05-15"}, "runtime_seconds": 0.3305, "model_version": "0.1"}
+{"timestamp": "2026-11-11T07:01:54.253312+00:00", "y_pred": 13783.06, "y_proba": [9879.06, 17687.07], "query": {"country": "united_kingdom", "target_date": "2019-05-15"}, "runtime_seconds": 0.2455, "model_version": "0.1"}
